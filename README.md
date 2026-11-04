@@ -4,6 +4,8 @@ This repository distributes approved Ogent recorder firmware and release notes. 
 
 Stable firmware, when available, is listed under [Releases](https://github.com/suzhidong/ogent-firmware/releases). Laboratory and spare-board test images are not stable releases.
 
+The current [0.3.26 spare-board preview](https://github.com/suzhidong/ogent-firmware/releases/tag/v0.3.26-test.1) is available as a **Pre-release** for already-provisioned test hardware. It is not offered by the app's stable update channel. Read its hardware and acceptance limits before use.
+
 ## Updating a recorder
 
 In an Ogent app build with official update-channel support, open **My device → Firmware update → Check for updates**. When an approved newer version is available, tap **Update**. The app downloads and validates the correct package; you then confirm when to restart the recorder. There is no file picker or link to paste. Older app builds may have a different update screen.

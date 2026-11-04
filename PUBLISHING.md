@@ -1,6 +1,6 @@
 # 发布正式固件 / Publishing stable firmware
 
-这个仓库只放公开下载说明及已经验收的发布附件。不要复制私有源码仓库、Mac 构建目录、备用板测试包、故障镜像、真实录音、声纹、配对数据或签名私钥。
+这个仓库只放公开下载说明及明确标注用途的固件附件。正式版必须完成验收；备用板测试包只能作为明确标注范围的 Pre-release，不能设为 Latest。不要复制私有源码仓库、Mac 构建目录、故障镜像、真实录音、声纹、配对数据或签名私钥。
 
 ## 每次发布
 
@@ -20,5 +20,11 @@ App 已使用固定的 latest-release 检查地址，不需要每次修改 App�
 - 每版附件地址示例：`https://github.com/suzhidong/ogent-firmware/releases/download/v0.3.27/recorder.ogentfw`
 
 首次正式发布前，latest 地址的 404 是“尚无正式固件”，不代表应上传一个测试包填补。发布后不要覆盖已经发布的版本附件；需要修正时发布更高版本，保留旧版本供核对。
+
+## 测试预发布
+
+备用板预发布使用带测试后缀的标签，例如 `v0.3.26-test.1`，说明包内版本仍为 `recorder-0.3.26`、测试硬件、已验证范围和未完成项目。仅上传非故障升级包、许可及校验清单，发布时启用 **Pre-release** 并明确禁用 **Latest**。正式 App 更新入口会忽略此类版本；不能把去掉后缀或取消 Pre-release 当作正式验收。
+
+当前预发布：[0.3.26 备用板测试版](https://github.com/suzhidong/ogent-firmware/releases/tag/v0.3.26-test.1)。其可下载不代表日常设备已经准备好 OTA，也不代表手机端已完成验收。
 
 GitHub 官方说明：[创建发布](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)、[固定下载链接](https://docs.github.com/en/repositories/releasing-projects-on-github/linking-to-releases)。
