@@ -2,11 +2,11 @@
 
 This repository distributes approved Ogent recorder firmware and release notes. Source code is managed separately. No recordings, transcripts, voice profiles, pairing data, credentials or signing keys belong here.
 
-Stable firmware, when available, is listed under [Releases](https://github.com/suzhidong/ogent-firmware/releases). Laboratory and spare-board test images are not stable releases.
+The current stable firmware is [Ogent recorder 0.3.28](https://github.com/suzhidong/ogent-firmware/releases/tag/v0.3.28). Laboratory and spare-board test images are not stable releases.
 
-The current [0.3.26 spare-board preview](https://github.com/suzhidong/ogent-firmware/releases/tag/v0.3.26-test.1) is available as a **Pre-release** for already-provisioned test hardware. It is not offered by the app's stable update channel. Read its hardware and acceptance limits before use.
+The earlier [0.3.26 spare-board preview](https://github.com/suzhidong/ogent-firmware/releases/tag/v0.3.26-test.1) remains a **Pre-release** for already-provisioned test hardware. It is not offered by the app's stable update channel. Read its hardware and acceptance limits before use.
 
-The [0.3.28 normal release candidate](https://github.com/suzhidong/ogent-firmware/releases/tag/v0.3.28) has passed real iPhone download, cancellation, disconnect recovery, process-restart retry and firmware activation checks. Background reception recovery is still under investigation, so it remains a **Pre-release**, not Latest. No stable update is offered yet.
+Version 0.3.28 passed real iPhone download, cancellation, disconnect recovery, process-restart retry, firmware activation and a subsequent bounded background reception/transcription check. The background observation included a verified locked interval; it was unlocked by the final query. An earlier reception stall did not recur during that observation, but its initial cause is unresolved. Read the release notes for these limits and the separate spare-board recovery evidence.
 
 ## Updating a recorder
 
@@ -20,7 +20,7 @@ Older recorders require initial USB preparation before Bluetooth updates are sup
 - App version check: <https://api.github.com/repos/suzhidong/ogent-firmware/releases/latest>
 - Latest approved package: <https://github.com/suzhidong/ogent-firmware/releases/latest/download/recorder.ogentfw>
 
-Until the first stable release is published, the latest-release addresses return 404. Ogent displays that no stable update is available; it does not offer a test image or claim the recorder is up to date.
+The latest-release addresses currently resolve to 0.3.28. Anonymous downloads of the versioned package and latest package were checked against the exact tested bytes and SHA-256. Test prereleases are excluded from this channel.
 
 Each stable release includes `recorder.ogentfw` and `LICENSES.txt`. The package embeds its hardware ID, signed-image version, checksum and third-party license notices. The recorder verifies the firmware signature before running an update.
 
