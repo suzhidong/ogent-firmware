@@ -6,6 +6,8 @@ Stable firmware, when available, is listed under [Releases](https://github.com/s
 
 The current [0.3.26 spare-board preview](https://github.com/suzhidong/ogent-firmware/releases/tag/v0.3.26-test.1) is available as a **Pre-release** for already-provisioned test hardware. It is not offered by the app's stable update channel. Read its hardware and acceptance limits before use.
 
+The [0.3.28 normal release candidate](https://github.com/suzhidong/ogent-firmware/releases/tag/v0.3.28) has passed real iPhone download, cancellation, disconnect recovery, process-restart retry and firmware activation checks. Background reception recovery is still under investigation, so it remains a **Pre-release**, not Latest. No stable update is offered yet.
+
 ## Updating a recorder
 
 In an Ogent app build with official update-channel support, open **My device → Firmware update → Check for updates**. When an approved newer version is available, tap **Update**. The app downloads and validates the correct package; you then confirm when to restart the recorder. There is no file picker or link to paste. Older app builds may have a different update screen.
